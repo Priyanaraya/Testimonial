@@ -1,55 +1,32 @@
-const testimonials=[
-    {
-        "id": 1,
-        "name":"dhachu",
-        "testimonial":"the given product is nice",
-        "image":"https://st3.depositphotos.com/1005145/15351/i/450/depositphotos_153516954-stock-photo-summer-landscape-with-flowers-in.jpg",
-    },
-    {
-        "id": 2,
-        "name":"prdeep",
-        "testimonial":"the given product is nice",
-        "image":"https://st3.depositphotos.com/1005145/15351/i/450/depositphotos_153516954-stock-photo-summer-landscape-with-flowers-in.jpg",
-    },
-    {
-        "id": 3,
-        "name":"dhachu",
-        "testimonial":"the given product is beauty",
-        "image":"flower.jpg",
-    },
-    {
-        "id": 4,
-        "name":"priya",
-        "testimonial":"the given product is wow",
-        "image":"https://st3.depositphotos.com/1005145/15351/i/450/depositphotos_153516954-stock-photo-summer-landscape-with-flowers-in.jpg",
-    },
-    {
-        "id": 5,
-        "name":"dharshini",
-        "testimonial":"the given product is super",
-        "image":"flower.jpg",
-    },
-
+const product_list = [
+    {'name':'product 1','price':'$300','img1':'flower.jpg',},
+    {'name':'product 2','price':'$200','img1':'flower.jpg',},
+    {'name':'product 3','price':'$400','img1':'flower.jpg',},
+    {'name':'product 4','price':'$600','img1':'flower.jpg',},
+    {'name':'product 5','price':'$100','img1':'flower.jpg',},
+    
 ]
-const image1=document.querySelector("img");
-const text=document.querySelector(".text");
-const username=document.querySelector(".username");
 
-let indexval=0;
-
-function UpdateTestimonial(){
-    const{id,name,testimonial,image}=testimonials[indexval];
-    image1.src=image;
-    text.innerHTML=testimonial;
-    username.innerHTML=name;
-    indexval++;
-    if(indexval===testimonials.length){
-        indexval=0;
-    }
-    setTimeout(UpdateTestimonial,2000)
-        
-    }
-
-UpdateTestimonial();
+const productcontainer=document.getElementById("product-cart");
+product_list.forEach((product)=>{
 
 
+    const card =document.createElement('div')
+    card.classList.add('product_card')
+    productcontainer.appendChild (card)
+
+    const image =document.createElement('img')
+    image.classList.add('product_img1')
+    image.src=product.img1;
+    card.appendChild(image)
+
+    const name1 =document.createElement('h1')
+   name1.classList.add('product_name')
+   name1.textContent=product.name;
+   card.appendChild(name1)
+
+    const price1 =document.createElement('h2')
+    price1.classList.add('product_price')
+    price1.textContent=product.price;
+     card.appendChild(price1)
+})
