@@ -1,0 +1,18 @@
+.product_card .product_img1{
+    width: 200px;
+    height: 200px;
+}
+.product_card{
+    background-color: rgba(81, 198, 228, 0.842);
+    border: 2px solid rgb(230, 68, 109);
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    margin-left: 30px;
+}
+.product-container {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 70px;
+
+}
