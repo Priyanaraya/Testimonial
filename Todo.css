@@ -1,0 +1,41 @@
+body{
+    margin: 0 auto;
+    width:30%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxctiUPZfrA6gPPqWEFVKDmAjjzlt1M4Obfg&s);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 360px;
+    /* height: auto; */
+    /* border: 1px solid black; */
+}
+#innerfield {
+    width: 290px;
+    height:35px;
+    /* background-color: rgba(110, 102, 226, 0.493); */
+    border: 3px solid black;
+    vertical-align: middle;
+    font-size: 20px;
+}
+#addtolist {
+    width: 50px;
+    height: 40px;
+    background-color: rgba(83, 17, 145, 0.74);
+    border: 1px solid black;
+    vertical-align: middle;
+    font-size: 20px;
+}
+#addtolist:hover{
+    background-color: rgba(172, 42, 165, 0.849);
+    box-shadow: 5px 0px 5px rgb(25, 1, 48);
+}
+.To-list{
+    margin-top: 25px;
+}
+.add-style{
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0;
+
+}
